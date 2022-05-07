@@ -10,6 +10,7 @@ namespace Day05
             Console.WriteLine("1. Flip Coin and print percentage of Heads and Tails");
             Console.WriteLine("2. Leap Year");
             Console.WriteLine("3. Power of 2");
+            Console.WriteLine("4. Harmonic Number");
 
             int choice = Convert.ToInt32(Console.ReadLine());
             switch (choice)
@@ -25,6 +26,10 @@ namespace Day05
                 case 3:
                     PowerOfTwo pw = new PowerOfTwo();
                     pw.Power();
+                    break;
+                case 4:
+                    HarmonicNumber hn = new HarmonicNumber();
+                    hn.Harmonic();
                     break;
                 default:
                     Console.WriteLine("Please enter the correct choice");
