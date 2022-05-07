@@ -14,6 +14,7 @@ namespace Day05
             Console.WriteLine("5. Factors");
             Console.WriteLine("6. Quotient and Remainder");
             Console.WriteLine("7. Swap Two Numbers");
+            Console.WriteLine("8. Even or Odd");
 
             int choice = Convert.ToInt32(Console.ReadLine());
             switch (choice)
@@ -45,6 +46,10 @@ namespace Day05
                 case 7:
                     SwapTwoNumbers swapTwoNumbers = new SwapTwoNumbers();
                     swapTwoNumbers.Swap();
+                    break;
+                case 8:
+                    EvenOrOdd evenOrOdd = new EvenOrOdd();
+                    evenOrOdd.EvenOdd();
                     break;
                 default:
                     Console.WriteLine("Please enter the correct choice");
