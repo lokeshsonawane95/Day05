@@ -7,15 +7,16 @@ namespace Day05
         public static void Main(string[] args)
         {
             Console.WriteLine("Enter the choice");
-            Console.WriteLine("1. Flip Coin and print percentage of Heads and Tails");
-            Console.WriteLine("2. Leap Year");
-            Console.WriteLine("3. Power of 2");
-            Console.WriteLine("4. Harmonic Number");
-            Console.WriteLine("5. Factors");
-            Console.WriteLine("6. Quotient and Remainder");
-            Console.WriteLine("7. Swap Two Numbers");
-            Console.WriteLine("8. Even or Odd");
-            Console.WriteLine("9. Alphabet is Vowel or Consonant");
+            Console.WriteLine(" 1. Flip Coin and print percentage of Heads and Tails");
+            Console.WriteLine(" 2. Leap Year");
+            Console.WriteLine(" 3. Power of 2");
+            Console.WriteLine(" 4. Harmonic Number");
+            Console.WriteLine(" 5. Factors");
+            Console.WriteLine(" 6. Quotient and Remainder");
+            Console.WriteLine(" 7. Swap Two Numbers");
+            Console.WriteLine(" 8. Even or Odd");
+            Console.WriteLine(" 9. Alphabet is Vowel or Consonant");
+            Console.WriteLine("10. Largest Among Three Numbers");
 
             int choice = Convert.ToInt32(Console.ReadLine());
             switch (choice)
@@ -55,6 +56,10 @@ namespace Day05
                 case 9:
                     VowelOrConsonant vowelOrConsonant = new VowelOrConsonant();
                     vowelOrConsonant.VowelConsonant();
+                    break;
+                case 10:
+                    LargestAmongThree largestAmongThree = new LargestAmongThree();
+                    largestAmongThree.Largest();
                     break;
                 default:
                     Console.WriteLine("Please enter the correct choice");
