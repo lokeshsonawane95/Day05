@@ -12,6 +12,7 @@ namespace Day05
             Console.WriteLine("3. Power of 2");
             Console.WriteLine("4. Harmonic Number");
             Console.WriteLine("5. Factors");
+            Console.WriteLine("6. Quotient and Remainder");
 
             int choice = Convert.ToInt32(Console.ReadLine());
             switch (choice)
@@ -35,6 +36,10 @@ namespace Day05
                 case 5:
                     Factors factors = new Factors();
                     factors.PrimeFactors();
+                    break;
+                case 6:
+                    QuotientAndRemainder quotientAndRemainder = new QuotientAndRemainder();
+                    quotientAndRemainder.QuotientRemainder();
                     break;
                 default:
                     Console.WriteLine("Please enter the correct choice");
