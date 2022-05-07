@@ -13,6 +13,7 @@ namespace Day05
             Console.WriteLine("4. Harmonic Number");
             Console.WriteLine("5. Factors");
             Console.WriteLine("6. Quotient and Remainder");
+            Console.WriteLine("7. Swap Two Numbers");
 
             int choice = Convert.ToInt32(Console.ReadLine());
             switch (choice)
@@ -40,6 +41,10 @@ namespace Day05
                 case 6:
                     QuotientAndRemainder quotientAndRemainder = new QuotientAndRemainder();
                     quotientAndRemainder.QuotientRemainder();
+                    break;
+                case 7:
+                    SwapTwoNumbers swapTwoNumbers = new SwapTwoNumbers();
+                    swapTwoNumbers.Swap();
                     break;
                 default:
                     Console.WriteLine("Please enter the correct choice");
