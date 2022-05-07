@@ -11,6 +11,7 @@ namespace Day05
             Console.WriteLine("2. Leap Year");
             Console.WriteLine("3. Power of 2");
             Console.WriteLine("4. Harmonic Number");
+            Console.WriteLine("5. Factors");
 
             int choice = Convert.ToInt32(Console.ReadLine());
             switch (choice)
@@ -30,6 +31,10 @@ namespace Day05
                 case 4:
                     HarmonicNumber hn = new HarmonicNumber();
                     hn.Harmonic();
+                    break;
+                case 5:
+                    Factors factors = new Factors();
+                    factors.PrimeFactors();
                     break;
                 default:
                     Console.WriteLine("Please enter the correct choice");
